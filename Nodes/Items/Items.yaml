@@ -1,0 +1,1007 @@
+Name: Items
+Type: FolderType
+Children:
+- Name: TemperatureZone
+  Type: ObjectLibraryItem
+  Children:
+  - Name: TemperatureZone
+    Id: g=fbf3c4b2e40d4cf809908d05ff0e7b68
+    Supertype: Panel
+    ReferenceType: HasComponent
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      Value: 200.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      Value: 720.0
+    - Name: BackPanel
+      Type: Rectangle
+      Children:
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#000000"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#707070"
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 2.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: HitTestVisible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: false
+      - Name: Blink
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: false
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        Value: 200.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Width"
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        Value: 720.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Height"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 0
+      - Name: Rotation
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+    - Name: BarChart
+      Type: Panel
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        Value: 80.0
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0}*0.8"
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Width"
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        Value: 350.0
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0}/2"
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Height"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 50.0
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0}/10"
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Width"
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#000000"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#00fc00"
+        - Name: BorderThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: CornerRadius
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: HitTestVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: false
+        - Name: Blink
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: false
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Opacity
+          Type: BaseVariableType
+          DataType: Float
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 10.0
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}/8"
+            - Name: ns=2;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Width"
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 0.0
+          Children:
+          - Name: EngineeringUnitConverter1
+            Type: EUConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: Number
+              ReferenceType: HasSource
+              Value: {"Type":11,"Body":0.0}
+              Children:
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}-{1}"
+                - Name: ns=2;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=4;g=3750a785-cfba-885d-45df-ce00d3025aca}"
+                - Name: ns=2;Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=4;g=73b088ad-20bb-e32d-941d-e5f7c87ed8e2}"
+            - Name: RawMin
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: RawMax
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 700.0
+            - Name: ScaledMin
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: ScaledMax
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              Value: 360.0
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Height"
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 20.0
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}/4"
+            - Name: ns=2;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Width"
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          Value: 350.0
+          Children:
+          - Name: EngineeringUnitConverter1
+            Type: EUConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: Number
+              ReferenceType: HasSource
+              Value: {"Type":11,"Body":0.0}
+              Children:
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}+{1}"
+                - Name: ns=2;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=4;g=73b088ad-20bb-e32d-941d-e5f7c87ed8e2}"
+                - Name: ns=2;Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=4;g=7f2b9b30-23e4-ba57-b084-6a4f746f1419}"
+            - Name: RawMin
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: RawMax
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 700.0
+            - Name: ScaledMin
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: ScaledMax
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              Value: 0.0
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Height"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: Rotation
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#000000"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#f7fc00"
+        - Name: BorderThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: CornerRadius
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: HitTestVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: false
+        - Name: Blink
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: false
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Opacity
+          Type: BaseVariableType
+          DataType: Float
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 30.0
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "({0}/8)*3"
+            - Name: ns=2;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Width"
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 20.0
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}/4"
+            - Name: ns=2;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Width"
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          Value: 350.0
+          Children:
+          - Name: EngineeringUnitConverter1
+            Type: EUConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: Number
+              ReferenceType: HasSource
+              Value: {"Type":11,"Body":0.0}
+              Children:
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}"
+                - Name: ns=2;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=4;g=803c7f1b-f4b4-eb2b-3873-f37c03fb8325}"
+            - Name: RawMin
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: RawMax
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 700.0
+            - Name: ScaledMin
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: ScaledMax
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              Value: 0.0
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Height"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: Rotation
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#000000"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ff0000"
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: ""
+            - Name: Pairs
+              Type: BaseObjectType
+              ModellingRule: None
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                ModellingRule: None
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  ModellingRule: None
+                  Value: 0
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ModellingRule: None
+                  Value: ""
+        - Name: BorderThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: CornerRadius
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: HitTestVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: false
+        - Name: Blink
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: false
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Opacity
+          Type: BaseVariableType
+          DataType: Float
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          Value: 50.0
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "({0}/8)*5"
+            - Name: ns=2;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Width"
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 20.0
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}/4"
+            - Name: ns=2;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Width"
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          Value: 350.0
+          Children:
+          - Name: EngineeringUnitConverter1
+            Type: EUConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: Number
+              ReferenceType: HasSource
+              Value: {"Type":11,"Body":0.0}
+              Children:
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}"
+                - Name: ns=2;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=4;g=38dd56da-7431-b0e9-d477-26aea7025d8c}"
+            - Name: RawMin
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: RawMax
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 700.0
+            - Name: ScaledMin
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: ScaledMax
+              Type: BaseDataVariableType
+              DataType: Double
+              ReferenceType: HasParameter
+              Value: 0.0
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../Height"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: Rotation
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+    - Name: NumericInput1
+      Type: NumericInput
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        Value: 120.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        Value: 30.0
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 140.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Width"
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          Value: 50.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Height"
+        - Name: EditableLabel1
+          Type: EditableLabel
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: StringFormatter1
+              Type: StringFormatter
+              Children:
+              - Name: Format
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"{0,5:d}°F"}
+              - Name: ns=2;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{NodeId:ns=4;g=803c7f1b-f4b4-eb2b-3873-f37c03fb8325}"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: Mode
+                Type: PropertyType
+                DataType: DynamicLinkMode
+                ReferenceType: HasComponent
+                ModellingRule: Optional
+                Value: 2
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Width"
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../Height"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 410.0
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0}/2+40"
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Height"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      Value: 0.0
