@@ -2,7 +2,7 @@ Name: Types
 Type: FolderType
 Children:
 - Name: NumericInput
-  Id: g=3d067ed3f5359531b9632bffbfac329b
+  Id: g=c7a9c76618b1127ed04c40f83b77118c
   Supertype: Panel
   ReferenceType: HasComponent
   Children:

@@ -4,10 +4,6 @@ Children:
 - File: Items/Items.yaml
 - File: Types/Types.yaml
 - File: Translations/Translations.yaml
-- Name: BranchingEnabled
-  Type: BaseDataVariableType
-  DataType: Boolean
-  Value: false
 - Name: PasswordPolicy
   Type: PasswordPolicy
   Children:
@@ -27,3 +23,15 @@ Children:
     Type: PropertyType
     DataType: Byte
     Value: 8
+- Name: Authentication
+  Type: PropertyGroup
+- Name: AlarmConfiguration
+  Type: PropertyGroup
+  Children:
+  - Name: BranchingEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: false
+- Name: Localization
+  Type: PropertyGroup

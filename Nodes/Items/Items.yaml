@@ -1005,3 +1005,9 @@ Children:
       Type: BaseVariableType
       DataType: Size
       Value: 0.0
+- Name: NumericInput
+  Type: ObjectLibraryItem
+  Children:
+  - Class: Reference
+    Type: HasComponent
+    Target: g=c7a9c76618b1127ed04c40f83b77118c
